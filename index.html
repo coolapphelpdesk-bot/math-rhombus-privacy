@@ -63,7 +63,8 @@
   <h2>1. Summary</h2>
   <p>Math Rhombus (&ldquo;the app&rdquo;) is a number-puzzle game published by <strong>Cool App Helpdesk</strong>. It is played offline, by players of every age, including children.</p>
   <ul>
-    <li>There is <strong>no account, no sign-in, no advertising and no analytics</strong>.</li>
+    <li>There is <strong>no account, no sign-in and no analytics</strong>.</li>
+    <li><strong>No ads before 1 September 2027.</strong> From then, a small banner from Google AdMob appears at the bottom of two menu screens &mdash; never during a puzzle. Those ads are child-safe and non-personalised (see section 5).</li>
     <li>Nicknames, stars, levels and settings are stored <strong>only on your device</strong>. They are never sent to us or anyone else.</li>
     <li>The only thing that can ever reach the developer is a <strong>feedback message or game idea</strong> that someone writes in <em>Settings &rarr; Feedback</em> and sends by tapping <em>Send</em>. That screen is behind a grown-up check, so a child cannot open it alone.</li>
   </ul>
@@ -71,7 +72,7 @@
 
 <section class="card">
   <h2>2. Data we collect</h2>
-  <p>Playing the game sends nothing. We receive data only when someone opens <em>Settings &rarr; Feedback</em> (after answering the grown-up question), writes a message and taps <em>Send</em>. That message contains:</p>
+  <p>Playing the game sends nothing to us. We receive data only when someone opens <em>Settings &rarr; Feedback</em> (after answering the grown-up question), writes a message and taps <em>Send</em>. That message contains:</p>
   <table>
     <thead><tr><th>Data</th><th>Why</th><th>Required?</th></tr></thead>
     <tbody>
@@ -102,7 +103,7 @@
   <table>
     <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
     <tbody>
-      <tr><td><code>INTERNET</code></td><td>Only to send a feedback message or game idea that you choose to send. The game itself never goes online.</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>INTERNET</code></td><td>To send a feedback message or game idea that you choose to send, and, from 1 September 2027, to load the advertising banner. The puzzles themselves never need the internet.</td><td>Auto-granted (normal permission)</td></tr>
     </tbody>
   </table>
   <p>The app asks for no other permission: no location, camera, microphone, contacts, photos or files.</p>
@@ -110,7 +111,12 @@
 
 <section class="card">
   <h2>5. Network activity and third parties</h2>
-  <p>The app contains <strong>no advertising SDKs, no analytics SDKs, no crash-reporting SDKs and no social or attribution SDKs</strong>. It makes one kind of network request: a feedback message you send, over HTTPS, to the developer&rsquo;s own feedback service hosted on Google Cloud. Messages are used only to reply and improve the app, and are never sold or shared.</p>
+  <p>The app contains <strong>no analytics SDKs, no crash-reporting SDKs and no social or attribution SDKs</strong>. It makes two kinds of network request:</p>
+  <ul>
+    <li><strong>Feedback</strong> &mdash; a message you send, over HTTPS, to the developer&rsquo;s own feedback service hosted on Google Cloud. Messages are used only to reply and improve the app, and are never sold or shared.</li>
+    <li><strong>Advertising (from 1 September 2027)</strong> &mdash; the app includes the <strong>Google Mobile Ads SDK (AdMob)</strong>. Before that date it is never started and sends nothing. From that date it shows one banner at the bottom of the Home and world-map screens; there are no ads on the puzzle screen, no full-screen ads and no rewarded ads.</li>
+  </ul>
+  <p>Because children play Math Rhombus, <strong>every ad request is marked as directed to children</strong> (COPPA) and as coming from a user under the age of consent (GDPR), and ads are limited to content rated <strong>G</strong> (general audiences). The app does not have access to the advertising ID. With these settings Google shows only non-personalised ads: no interest-based advertising and no remarketing. To show the ad, measure it and prevent fraud, Google receives technical information such as the IP address, the device model and Android version and an identifier limited to this developer&rsquo;s apps (the app set ID), under <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a> and its <a href="https://policies.google.com/technologies/partner-sites">rules for partner apps</a>. The developer receives only aggregated earnings reports, never information about an individual player.</p>
   <p><em>Settings &rarr; Privacy policy</em> opens this page in your web browser, also after the grown-up question.</p>
 </section>
 
@@ -120,7 +126,7 @@
   <ul>
     <li>The game collects <strong>no personal information</strong> from anyone who plays it. Nicknames stay on the device and can be any word; we suggest not using a real full name.</li>
     <li>The feedback forms and the link to this page are behind a <strong>grown-up check</strong> (a multiplication question). They are meant for parents and adult players.</li>
-    <li>There are no ads, no in-app purchases, no chat and no way to contact other players.</li>
+    <li>Ads (from 1 September 2027) are child-directed, non-personalised and rated G, and appear only on menu screens. There are no in-app purchases, no chat and no way to contact other players.</li>
   </ul>
   <p>If you believe a child has sent us a message with personal information, email us and we will delete it.</p>
 </section>
